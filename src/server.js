@@ -18,16 +18,16 @@ export const setupServer = () => {
   app.use(express.json());
 
   // routes
-  app.get('/contact', async (req, res) => {
+  app.get('/contacts', async (req, res) => {
     const data = await contactServices.getAllContacts();
     res.json({
       status: 200,
-      message: 'Successfully found contact',
+      message: 'Successfully found contacts',
       data,
     });
   });
 
-  app.get('/contact/:id', async (req, res) => {
+  app.get('/contacts/:id', async (req, res) => {
     const { id } = req.params;
     const data = await contactServices.getContactById(id);
 
