@@ -12,7 +12,7 @@ parameters:
     description: ID of the contact to update
     schema:
       type: string
-      example: '65ca67e7ae7f10c88b598384'
+      example: '67056f5b3a8ce1ddad48c15d'
 requestBody:
   required: true
   content:
@@ -56,7 +56,7 @@ responses:
               example: 200
             message:
               type: string
-              example: Successfully updated contact with id 65ca67e7ae7f10c88b598384!
+              example: Successfully updated contact with id 67056f5b3a8ce1ddad48c15d!
             data:
               type: object
               $ref: '../../../components/schemas/contact.yaml'

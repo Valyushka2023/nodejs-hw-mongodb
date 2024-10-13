@@ -12,9 +12,9 @@ parameters:
     description: ID of the contact to delete
     schema:
       type: string
-      example: '65ca67e7ae7f10c88b598384'
+      example: '6707059220ad0cd1c0111929'
 responses:
-  '200':
+  '204':
     description: 'Successfully deleted contact'
     content:
       application/json:
@@ -26,10 +26,10 @@ responses:
           properties:
             status:
               type: integer
-              example: 200
+              example: 204
             message:
               type: string
-              example: Successfully deleted contact with id 65ca67e7ae7f10c88b598384!
+              example: Successfully deleted contact with id 6707059220ad0cd1c0111929!
   '404':
     $ref: '../../../components/responses/404.yaml'
   '401':
