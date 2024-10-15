@@ -16,7 +16,7 @@ parameters:
 requestBody:
   required: true
   content:
-    application/json:
+    multipart/form-data:
       schema:
         type: object
         properties:
@@ -39,6 +39,9 @@ requestBody:
           isFavourite:
             type: boolean
             example: false
+          photo:
+            type: string
+            format: binary
 responses:
   '200':
     description: 'Successfully updated contact'

@@ -14,7 +14,6 @@ requestBody:
           - name
           - phoneNumber
           - contactType
-          - photo
         properties:
           name:
             description: "Contact's name"
@@ -28,6 +27,14 @@ requestBody:
             description: "Contact's contactType"
             type: string
             enum: ['work', 'home', 'personal']
+          email:
+            description: "Contact's email"
+            type: string
+            example: 'jane.doe@example.com'
+          isFavourite:
+            description: "Contact's isFavorite"
+            type: boolean
+            example: false
           photo:
             description: "Contact's photo"
             type: string
